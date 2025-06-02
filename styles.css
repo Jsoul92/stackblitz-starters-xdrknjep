@@ -614,3 +614,23 @@ html {
 .grayscale {
   filter: grayscale(100%);
 }
+.typing-text {
+  animation: typing 3.2s steps(60, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 0;
+  max-width: 100%;
+  border-right: 2px solid white;
+  color: #fff;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
