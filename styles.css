@@ -113,28 +113,6 @@ nav {
   overflow: hidden;
 }
 
-/* Анимация typing */
-.typing-text {
-  animation: typing 3.2s steps(60, end), blink 0.75s step-end infinite;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  max-width: 100%;
-  border-right: 2px solid white;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
-}
-
-
-
-
 .hero-content {
   position: relative;
   z-index: 2;
