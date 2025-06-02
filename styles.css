@@ -103,15 +103,35 @@ nav {
 .hero {
   background: linear-gradient(135deg, rgba(26, 26, 26, 0.2), rgba(45, 45, 45, 0.4)),
     url('IMG_2131.jpeg');
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
   padding: 120px 0 80px;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
+
+/* Анимация typing */
+.typing-text {
+  animation: typing 3.2s steps(60, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 100%;
+  border-right: 2px solid white;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
 
 
 
